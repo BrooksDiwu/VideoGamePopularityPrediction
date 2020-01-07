@@ -52,3 +52,7 @@ def plotNewOwners(listOfDfs, names, rotation=0):
                      figsize = (20,10), title="Number of New Owners") 
     ax = df.plot.bar(x = 'Type',y = ['avgAvg','medAvg'],rot=rotation, figsize=(20,10), 
                      title = "Average new owners per game")
+
+#removes the average and medians that are 0
+def remove0s(df):
+    return df[(df.average_forever != 0) & (df.median_forever != 0)]
