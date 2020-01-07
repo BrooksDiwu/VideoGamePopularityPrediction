@@ -1,0 +1,18 @@
+Total earnings:
+price * llOwners
+price * ulOwners
+
+Plot tags against each other:
+How?
+First plot all tags/genres in histograms, owners on the x axis and count on y axis
+bar graph of all the genres/tags 
+Plot line graphs with each tag/genre being new line and owners being x axis with positive/negative ratio as y axis
+Plot line graphs with each tag/genre being new line and owners being x axis with average users/median users ratio as y axis
+Do same as above but with earnings instead of owners
+score_rank/user score against positive/negative ratio as well as owners
+label the points that stand out, aka the big points
+
+Release date vs average users/median users
+Release date vs owners
+
+Controller support vs non controller support
