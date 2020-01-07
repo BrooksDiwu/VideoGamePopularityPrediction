@@ -32,14 +32,14 @@ def getAvgMedCount(listOfDfs):
     median = []
     count = []
     for i in listOfDfs:
-        lowerOwners.append(i['average_forever'].sum())
-        upperOwners.append(i['median_forever'].sum())
+        avg.append(i['average_forever'].sum())
+        median.append(i['median_forever'].sum())
         count.append(i.shape[0])
     return avg, median, count
 
 #takes in a list of dataframes and names for the dataframes and outputs a new dataframe with new users and count 
 def createAvgMedDF(listOfDfs, names):
-    avg, med, count = getOwnersCount(listOfDfs)
+    avg, med, count = getAvgMedCount(listOfDfs)
     df = pd.DataFrame({'Type':names,'Avg New Users':avg, 'Median New Users': med, 'Count':count})
     df['avgAvg'] = df['Avg New Users']/df['Count']
     df['medAvg'] = df['Median New Users']/df['Count']
