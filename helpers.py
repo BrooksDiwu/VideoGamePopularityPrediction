@@ -28,15 +28,16 @@ def plotOwners(listOfDfs, names, horizontal = False,
 
     if horizontal:
         ax = df.plot.barh(x = 'Type',y = 'Owner Average',rot=rotation, 
-                        figsize = (20,10), title=title1) 
+                        figsize = (20,10), title=title1, color = 'blue') 
         ax.tick_params(axis = 'both', labelsize=15)
         ax.title.set_size(40)
 
-        ax = df.plot.barh(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = title2)
+        ax = df.plot.barh(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = title2
+                            , color = 'red')
         ax.tick_params(axis = 'both', labelsize=15)
         ax.title.set_size(40)
         
-        ax = df.plot.barh(x = 'Type',y = 'ownerAvg', rot=rotation, figsize=(20,10), 
+        ax = df.plot.barh(x = 'Type',y = 'ownerAvg', rot=rotation, figsize=(20,10),color = 'green',
                         title = title3)
         ax.tick_params(axis = 'both', labelsize=15)
         ax.title.set_size(40)
