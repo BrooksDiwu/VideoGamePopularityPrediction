@@ -21,10 +21,19 @@ def createOwnersDF(listOfDfs, names):
 #plotting the dataframe
 def plotOwners(listOfDfs, names, rotation=0):
     df = createOwnersDF(listOfDfs, names)
+
     ax = df.plot.bar(x = 'Type',y = ['Lower Limit Owners', 'Upper Limit Owners'],rot=rotation, 
                      figsize = (20,10), title="Number of Owners") 
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
+
     ax = df.plot.bar(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = "Number of Games")
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
+    
     ax = df.plot.bar(x = 'Type',y = ['llAvg','ulAvg'],rot=rotation, figsize=(20,10), title = "Average owners per game")
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
 
 #takes in a list of dataframes and outputs the values of avg and median new users and counts
 def getAvgMedCount(listOfDfs):
@@ -48,10 +57,16 @@ def createAvgMedDF(listOfDfs, names):
 #plotting the dataframe
 def plotNewOwners(listOfDfs, names, rotation=0):
     df = createAvgMedDF(listOfDfs, names)
+
     ax = df.plot.bar(x = 'Type',y = ['Avg New Users', 'Median New Users'],rot=rotation, 
                      figsize = (20,10), title="Number of New Owners") 
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
+
     ax = df.plot.bar(x = 'Type',y = ['avgAvg','medAvg'],rot=rotation, figsize=(20,10), 
                      title = "Average new owners per game")
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
 
 #removes the average and medians that are 0
 def remove0s(df):
