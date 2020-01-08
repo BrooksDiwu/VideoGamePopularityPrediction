@@ -56,3 +56,7 @@ def plotNewOwners(listOfDfs, names, rotation=0):
 #removes the average and medians that are 0
 def remove0s(df):
     return df[(df.average_forever != 0) & (df.median_forever != 0)]
+
+#counts the number of rows that have an average/median of 0
+def count0s(df):
+    return df[(df.average_forever == 0) & (df.median_forever == 0)].shape[0]
