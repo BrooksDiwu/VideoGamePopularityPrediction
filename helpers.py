@@ -14,24 +14,40 @@ def getOwnersCount(listOfDfs):
 def createOwnersDF(listOfDfs, names):
     lO, uO, count = getOwnersCount(listOfDfs)
     df = pd.DataFrame({'Type':names,'Lower Limit Owners':lO, 'Upper Limit Owners': uO, 'Count':count})
+    df['Owner Average'] = (df['Lower Limit Owners'] + df['Upper Limit Owners'])/2
+    df['ownerAvg'] = df['Limit Average']/df['Count']
     df['llAvg'] = df['Lower Limit Owners']/df['Count']
     df['ulAvg'] = df['Upper Limit Owners']/df['Count']
     return df
 
 #plotting the dataframe
-def plotOwners(listOfDfs, names, rotation=0):
+def plotOwners(listOfDfs, names, rotation=0, title1 = "Number of Owners", title2 = 
+                "Number of Games", title3 = "Average Owners per game"):
     df = createOwnersDF(listOfDfs, names)
 
-    ax = df.plot.bar(x = 'Type',y = ['Lower Limit Owners', 'Upper Limit Owners'],rot=rotation, 
-                     figsize = (20,10), title="Number of Owners") 
+    # ax = df.plot.bar(x = 'Type',y = ['Lower Limit Owners', 'Upper Limit Owners'],rot=rotation, 
+    #                  figsize = (20,10), title=title1) 
+    # ax.tick_params(axis = 'both', labelsize=15)
+    # ax.title.set_size(40)
+
+    # ax = df.plot.bar(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = title2)
+    # ax.tick_params(axis = 'both', labelsize=15)
+    # ax.title.set_size(40)
+    
+    # ax = df.plot.bar(x = 'Type',y = ['llAvg','ulAvg'],rot=rotation, figsize=(20,10), title = title3)
+    # ax.tick_params(axis = 'both', labelsize=15)
+    # ax.title.set_size(40)
+    ax = df.plot.bar(x = 'Type',y = ['Owner Average'],rot=rotation, 
+                     figsize = (20,10), title=title1) 
     ax.tick_params(axis = 'both', labelsize=15)
     ax.title.set_size(40)
 
-    ax = df.plot.bar(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = "Number of Games")
+    ax = df.plot.bar(x = 'Type',y = 'Count',rot=rotation, figsize = (20,10), title = title2)
     ax.tick_params(axis = 'both', labelsize=15)
     ax.title.set_size(40)
     
-    ax = df.plot.bar(x = 'Type',y = ['llAvg','ulAvg'],rot=rotation, figsize=(20,10), title = "Average owners per game")
+    ax = df.plot.bar(x = 'Type',y = ['ownerAvg'], color = 'red', rot=rotation, figsize=(20,10), 
+                     title = title3)
     ax.tick_params(axis = 'both', labelsize=15)
     ax.title.set_size(40)
 
@@ -55,16 +71,22 @@ def createAvgMedDF(listOfDfs, names):
     return df
 
 #plotting the dataframe
-def plotNewOwners(listOfDfs, names, rotation=0):
+def plotNewOwners(listOfDfs, names, rotation=0, title1=" Total Average Number of New Owners", 
+                  title2= "Total Median Number of New Owners",title3="Average new owners per game"):
     df = createAvgMedDF(listOfDfs, names)
 
-    ax = df.plot.bar(x = 'Type',y = ['Avg New Users', 'Median New Users'],rot=rotation, 
-                     figsize = (20,10), title="Number of New Owners") 
+    ax = df.plot.bar(x = 'Type',y = ['Avg New Users'],rot=rotation, 
+                     figsize = (20,10), title=title1) 
+    ax.tick_params(axis = 'both', labelsize=15)
+    ax.title.set_size(40)
+
+    ax = df.plot.bar(x = 'Type',y = ['Median New Users'],rot=rotation, 
+                     figsize = (20,10), title=title2, color = 'red') 
     ax.tick_params(axis = 'both', labelsize=15)
     ax.title.set_size(40)
 
     ax = df.plot.bar(x = 'Type',y = ['avgAvg','medAvg'],rot=rotation, figsize=(20,10), 
-                     title = "Average new owners per game")
+                     title = title3)
     ax.tick_params(axis = 'both', labelsize=15)
     ax.title.set_size(40)
 
