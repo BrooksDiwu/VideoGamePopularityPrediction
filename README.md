@@ -47,7 +47,7 @@ We can see sports are not a very good indie type game
 MMOs still dominate the average new owners, due to the large outliers
 
 Before we look into and compare the interesting genres, we remove all games that have 0 owners.  
-![a](/graphs/FreeIndieGames/freeIndie0count.png)
+![a](/graphs/FreeIndieGames/freeIndie0count.png)  
 We see that adventure and action have a lot of games that do not get played.  
 
 Now we compare the top 3 categories, action, strategy, and adventure, ignoring MMO because it seems like only the super popular ones get played.  
@@ -69,8 +69,8 @@ power: 0.9999999533757833
 *H0*: Adventure has the same amount of owners as other Genres  
 *H1*: Adventure have a greater amount of owners than other Genres  
 
-p-value: 0.2862187839884423
-power: 0.5729919570177814 
+p-value: 0.2862187839884423  
+power: 0.5729919570177814  
 *Conclusion*: Fail to Reject H0 and determine that Adventure games could have on average the same amount of owners as games from other genres  
 
 **MMO vs others:**  
