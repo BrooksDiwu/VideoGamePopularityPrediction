@@ -36,7 +36,7 @@ Owners by Genre:
 Can see many action owners  
   
 Number of Games by Genre:  
-![a](/graphs/FreeIndieGames/GamesByTag.png)  
+![a](/graphs/FreeIndieGames/GamesByGenre.png)  
 Can see number of games for each genre  
 
 Average Owners by Genre:  
