@@ -20,6 +20,10 @@ clean.json is the clean data in a json folder
 toDo.txt is just for brainstorming ideas.
 
 # Data Info
+| Stretch/Untouched | ProbDistribution | Accuracy |
+| --- | --- | --- |
+| Stretched | Gaussian | .843 |
+
 Original Cleaned Data:  
 
 RangeIndex: 33099 entries, 0 to 33098  
