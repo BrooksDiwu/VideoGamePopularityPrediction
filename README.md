@@ -17,4 +17,6 @@ helpers.py contains helper functions
 
 clean.json is the clean data in a json folder
 
+toDo.txt is just for brainstorming ideas.
+
 
