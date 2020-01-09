@@ -57,6 +57,7 @@ We can see in all the graphs action tends to get more owners, and adventure does
 **We now hypothesis test whether action/adventure/mmo are better than the other genres:**  
 All tests are Mann Whitney U Tests ran with games having 0 owners being removed  
 
+**Action vs others:**
 *H0*: Action has the same amount of owners as other Genres  
 *H1*: Action have a greater amount of owners than other Genres  
 
@@ -64,6 +65,7 @@ p-value: 0.0029052114451273664
 power: 0.9999999533757833  
 *Conclusion*: Reject H0 and determine that Action games tend to have a greater amount of owners than games from other genres  
 
+**Adventure vs others:**
 *H0*: Adventure has the same amount of owners as other Genres  
 *H1*: Adventure have a greater amount of owners than other Genres  
 
@@ -71,6 +73,7 @@ p-value: 0.2862187839884423
 power: 0.5729919570177814 
 *Conclusion*: Fail to Reject H0 and determine that Adventure games could have on average the same amount of owners as games from other genres  
 
+**MMO vs others:**
 *H0*: MMO has the same amount of owners as other Genres  
 *H1*: MMO have a greater amount of owners than other Genres  
 
@@ -78,6 +81,7 @@ p-value: 1.0107732291236831e-07
 power: 0.9994968474730219
 *Conclusion*: Reject H0 and determine that Action games tend to have a greater amount of owners than games from other genres  
 
+**MMOs vs Action:**
 *H0*: MMOs has the same amount of owners as Action Games 
 *H1*: MMOs have a greater amount of owners than Action Games  
 
