@@ -24,8 +24,8 @@ Original Cleaned Data:
 
 RangeIndex: 33099 entries, 0 to 33098  
 Data columns (total 18 columns):  
-Category|Count|Type
-------------|------------|------------
+Category|Count|Type  
+------------|------------|------------  
 Genres|33099|non-null object  
 Tags|33099|non-null object  
 appid|33099|non-null int64  
@@ -51,8 +51,8 @@ Further Cleaned Data:
 
 RangeIndex: 33099 entries, 0 to 33098  
 Data columns (total 8 columns):  
-Category|Count|Type
-------------|------------|------------
+Category|Count|Type  
+------------|------------|------------  
 name|33099|non-null object  
 Genres|33099|non-null object  
 Tags|33099|non-null object  
