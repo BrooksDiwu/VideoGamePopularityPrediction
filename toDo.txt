@@ -16,3 +16,12 @@ Release date vs average users/median users
 Release date vs owners
 
 Controller support vs non controller support
+
+Outline:
+
+Slide 1: Overview of Data Used and project, explain lower and upper limit and Like/Dislike Ratio, and how data was scraped
+Slide 2: Comparison of Free vs Paid, Indie vs non-Indie
+Next Slides: Free Indie Games
+Next Slides: Free non Indie Games
+Next Slides: Paid Indie Games w/ earnings
+Next Slides: Paid non Indie Games w/earnings
