@@ -31,6 +31,14 @@ Further Cleaned Data:
 
 Each graph file contains graphs for different categories  
 **Example (Free Indie Games):** 
-Free Indie Game Owners by Genre:  
+Owners by Genre:  
 ![a](/graphs/FreeIndieGames/OwnersByGenre.png)  
+Can see many action owners  
+  
+Number of Games by Genre:  
+![a](/graphs/FreeIndieGames/GamesByTag.png)  
+Can see number of games for each genre  
 
+Average Owners by Genre:  
+![a](/graphs/FreeIndieGames/AvgOwnersByGenre.png)  
+Can see number of average owners by genre
