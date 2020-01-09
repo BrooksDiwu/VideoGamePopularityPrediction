@@ -31,14 +31,12 @@ Further Cleaned Data:
 
 Each graph file contains graphs for different categories  
 **Example (Free Indie Games):** 
-Owners by Genre:  
 ![a](/graphs/FreeIndieGames/OwnersByGenre.png)  
 Can see many action owners  
   
-Number of Games by Genre:  
 ![a](/graphs/FreeIndieGames/GamesByGenre.png)  
-Can see number of games for each genre  
+Can see many action games, so maybe that's why there are so many owners  
 
 Average Owners by Genre:  
 ![a](/graphs/FreeIndieGames/AvgOwnersByGenre.png)  
-Can see number of average owners by genre
+MMO seems to have a very high average owners for the amount of total owners, worth looking into  
