@@ -27,4 +27,10 @@ Original Cleaned Data:
 Further Cleaned Data:  
 ![Further Cleaned Data](/graphs/FurtherCleaned.png)
 
- 
+# How the Data is Organized
+
+Each graph file contains graphs for different categories  
+**Example (Free Indie Games):** 
+Free Indie Game Owners by Genre:  
+![a](/graphs/FreeIndieGames/OwnersByGenre.png)  
+
